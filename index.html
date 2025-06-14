@@ -1,92 +1,112 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SAPWIN-MR Information</title>
+  <title>SAPWIN-MR | Sapline Pharma</title>
   <style>
     * {
       box-sizing: border-box;
     }
-
     body {
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(120deg, #f8f9fa, #e0f7fa);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    .card {
-      background-color: white;
-      padding: 24px;
-      margin: 16px;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      max-width: 500px;
-      width: 100%;
-      text-align: center;
-    }
-
-    .brand {
-      font-size: 8vw;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .sapwin {
-      color: #d32f2f; /* red */
-    }
-
-    .mr {
-      color: #283593; /* deep blue */
-    }
-
-    .composition {
-      font-size: 4.5vw;
+      background-color: #f7f7f7;
       color: #333;
-      line-height: 1.6;
-      margin-top: 10px;
-      font-weight: 500;
     }
-
-    .company {
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 24px 16px;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+    .title {
+      text-align: center;
+      font-size: 7vw;
+      font-weight: bold;
+    }
+    .sapwin { color: #d32f2f; }
+    .mr { color: #283593; }
+    h2 {
       margin-top: 24px;
-      font-size: 3.8vw;
-      color: #555;
-      font-weight: 500;
+      color: #444;
+      font-size: 5vw;
     }
-
+    p {
+      line-height: 1.6;
+      margin: 8px 0;
+      font-size: 4.5vw;
+    }
+    ul {
+      margin: 8px 0 16px 16px;
+      padding-left: 16px;
+    }
+    li {
+      margin-bottom: 6px;
+      font-size: 4.5vw;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 24px;
+      color: #666;
+      font-size: 3.8vw;
+    }
     @media (min-width: 600px) {
-      .brand {
-        font-size: 36px;
-      }
-      .composition {
-        font-size: 16px;
-      }
-      .company {
-        font-size: 14px;
-      }
+      .title { font-size: 36px; }
+      h2 { font-size: 22px; }
+      p, li { font-size: 16px; }
+      .footer { font-size: 14px; }
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="brand">
-      <span class="sapwin">SAPWIN</span><span class="mr">-MR</span>
-    </div>
-    <div class="composition">
-      Etoricoxib 60 mg + Thiocolchicoside 4 mg <br/>
-      <strong>Tablets</strong>
-    </div>
-    <div class="company">© Sapline Pharma</div>
+  <div class="container">
+    <div class="title"><span class="sapwin">SAPWIN</span><span class="mr">-MR</span></div>
+    <p><strong>Composition:</strong> Etoricoxib 60 mg + Thiocolchicoside 4 mg Tablets</p>
+
+    <h2>Etoricoxib</h2>
+    <ul>
+      <li><strong>COX-2 inhibitor:</strong> Reduces inflammation and pain.</li>
+      <li><strong>Pain relief:</strong> Effective for arthritis, spondylitis, and more.</li>
+      <li><strong>Dosage:</strong> Typically once daily.</li>
+    </ul>
+
+    <h2>Thiocolchicoside</h2>
+    <ul>
+      <li><strong>Muscle relaxant:</strong> Relieves muscle spasms.</li>
+      <li><strong>Pain relief:</strong> Useful for acute pain with spasms.</li>
+      <li><strong>Dosage:</strong> Varies per patient and condition.</li>
+    </ul>
+
+    <h2>Combination Therapy</h2>
+    <ul>
+      <li>Provides both anti-inflammatory and muscle relaxant effects.</li>
+      <li>Useful for musculoskeletal pain, back pain, osteoarthritis.</li>
+    </ul>
+
+    <h2>Benefits</h2>
+    <ul>
+      <li>Effective pain and inflammation relief.</li>
+      <li>Improves mobility and quality of life.</li>
+    </ul>
+
+    <h2>Side Effects</h2>
+    <ul>
+      <li><strong>Etoricoxib:</strong> GI issues, cardiovascular risks, kidney effects.</li>
+      <li><strong>Thiocolchicoside:</strong> Drowsiness, dizziness, digestive issues.</li>
+    </ul>
+
+    <h2>Precautions</h2>
+    <ul>
+      <li>Consult a doctor if you have other medical conditions or medications.</li>
+      <li>Report side effects to your healthcare provider immediately.</li>
+    </ul>
+
+    <div class="footer">© Sapline Pharma</div>
   </div>
 </body>
 </html>
